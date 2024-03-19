@@ -12,4 +12,4 @@ steps:
   inputs:
     targetType: 'filePath'
     filePath: '$(Build.SourcesDirectory)\Sample.ps1'
-    arguments: '-outputDirectory "$(System.DefaultWorkingDirectory)"'
+    arguments: '-outputDirectory "$(Build.SourcesDirectory)\output"'
