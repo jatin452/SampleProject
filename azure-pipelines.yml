@@ -1,0 +1,14 @@
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- checkout: self
+
+- task: PowerShell@2
+  displayName: 'Run PowerShell Script'
+  inputs:
+    targetType: 'filePath'
+    filePath: '$(Build.SourcesDirectory)\Sample.ps1'
